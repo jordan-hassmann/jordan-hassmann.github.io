@@ -306,7 +306,6 @@ setTimeout(() => {
 
 
 
-
 const lowerLineWidth = 30
 const lowerPadding = (100 * lowerLineWidth / heroCanvasLower.height) / 2
 

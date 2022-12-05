@@ -203,7 +203,7 @@ window.addEventListener('resize', () => {
     ).draw(secondaryCanvases[0][1])
     
     new SecondaryLines(
-        aboutSegments, 
+        lowerSegments, 
         secondaryLineWidth, 
         '#0D1D45', 
         secondaryCanvases[1][0].width, 
@@ -211,10 +211,18 @@ window.addEventListener('resize', () => {
     ).draw(secondaryCanvases[1][1])
     
     new SecondaryLines(
-        storySegments, 
+        aboutSegments, 
         secondaryLineWidth, 
         '#0D1D45', 
         secondaryCanvases[2][0].width, 
         secondaryCanvases[2][0].height
     ).draw(secondaryCanvases[2][1])
+    
+    new SecondaryLines(
+        storySegments, 
+        secondaryLineWidth, 
+        '#0D1D45', 
+        secondaryCanvases[3][0].width, 
+        secondaryCanvases[3][0].height
+    ).draw(secondaryCanvases[3][1])
 })

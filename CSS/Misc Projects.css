@@ -136,4 +136,14 @@
     .misc-projects .container .project:hover {
         margin-top: 15px;
     }
+
+    .misc-projects .project:nth-child(1) {
+        transition: opacity 0.5s ease 0.0s, transform 0.5s ease 0.0s, margin-top 0.2s ease 0s;
+    }
+    .misc-projects .project:nth-child(2) {
+        transition: opacity 0.5s ease 0.0s, transform 0.5s ease 0.0s, margin-top 0.2s ease 0s;
+    }
+    .misc-projects .project:nth-child(3) {
+        transition: opacity 0.5s ease 0.0s, transform 0.5s ease 0.0s, margin-top 0.2s ease 0s;
+    }
 }

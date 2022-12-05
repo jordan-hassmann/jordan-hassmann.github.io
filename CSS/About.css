@@ -11,6 +11,7 @@
 
 .about .cover {
     position: absolute;
+    display: none;
     height: calc(100vh + 40%);
     width: 100%;
     top: -40%;
@@ -36,7 +37,7 @@
     margin-bottom: 80px;
 }
 
-.about .section:nth-child(even) {
+.about .section:nth-child(odd) {
     align-self: flex-end;
 }
 
@@ -74,12 +75,6 @@
 @media screen and (max-width: 1200px) {
     .about {
         display: flex;
-        /* flex-direction: column;
-        position: relative;
-        background-color: var(--background-blue);
-        z-index: 10;
-    
-        margin-bottom: 250px; */
 
         justify-content: center;
         align-items: center;
@@ -95,7 +90,15 @@
         margin-bottom: 100px;
     }
     
-    .about .section:nth-child(even) {
+    .about .section:nth-child(odd) {
         align-self: unset;
+    }
+
+    .about .cover {
+        display: block
+    }
+
+    #about-canvas-secondary {
+        display: none;
     }
 }
