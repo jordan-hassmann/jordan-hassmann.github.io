@@ -1,0 +1,47 @@
+
+
+.now {
+    background-color: var(--now-background-blue);
+}
+
+.now .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+
+
+
+.now .me {
+    width: 350px;
+    max-width: 30%;
+    min-width: 200px;
+
+    margin-right: 70px;
+}
+
+
+
+
+.now .content {
+    width: 550px;
+}
+
+.now .title {
+    color: var(--white);
+    font-size: 55px;
+    font-family: 'Caveat', cursive;
+    font-weight: 100;
+
+    margin-bottom: 30px;
+}
+
+.now .text {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    font-family: 'IBM Plex Sans', sans-serif;
+}

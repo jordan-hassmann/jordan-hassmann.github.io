@@ -1,0 +1,201 @@
+
+
+.skills {
+    background-color: var(--background-black);
+    position: relative;
+
+    height: 100vh;
+    padding: 0 20px;
+}
+
+
+
+
+.skills .background {
+    transition: 0.05 ease;
+    position: relative;
+    z-index: 2;
+}
+
+.skills .background .item {
+    color: var(--skills-grey);
+    font-size: min(25px, 3vw);
+    font-weight: bold;
+    line-height: 30px;
+    text-align: right;
+}
+
+.skills .background .item:nth-child(1) {
+    width: 80%;
+}
+.skills .background .item:nth-child(2){
+    width: 29%;
+}
+.skills .background .item:nth-child(3){
+    width: 70%;
+}
+.skills .background .item:nth-child(4){
+    width: 20%;
+}
+.skills .background .item:nth-child(5){
+    width: 90%;
+}
+.skills .background .item:nth-child(6){
+    width: 82%;
+}
+.skills .background .item:nth-child(7){
+    width: 34%;
+}
+.skills .background .item:nth-child(8){
+    width: 15%;
+}
+.skills .background .item:nth-child(9){
+    width: 92%;
+}
+.skills .background .item:nth-child(10){
+    width: 18%;
+}
+.skills .background .item:nth-child(11){
+    width: 86%;
+}
+.skills .background .item:nth-child(12){
+    width: 36%;
+}
+.skills .background .item:nth-child(13){
+    width: 67%;
+}
+.skills .background .item:nth-child(14){
+    width: 28%;
+}
+.skills .background .item:nth-child(15){
+    width: 83%;
+}
+.skills .background .item:nth-child(16){
+    width: 46%;
+}
+
+
+.skills .background .item:nth-child(10) {
+    margin-top: 120px;
+}
+
+
+
+
+
+
+
+.skills .foreground {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 10;
+}
+
+.skills .foreground .title {
+    color: var(--skills-grey);
+    font-size: min(55px, 8vw);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    
+    margin-bottom: 100px;
+
+    transition: 0.5s ease 0.5s color;
+}
+
+.skills .foreground .items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 70%;
+}
+
+.skills .foreground .item {
+    width: min(100px, 15%);
+    opacity: 0;
+    transform: translateX(-30px);
+
+    transition: 0.5s ease;
+}
+
+.skills .foreground .items .item:nth-child(1) {
+    transition-delay: 0.0s;
+}
+.skills .foreground .items .item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.skills .foreground .items .item:nth-child(3) {
+    transition-delay: 0.4s;
+}
+.skills .foreground .items .item:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+
+
+
+
+
+.skills .scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+.skills .scroll .text {
+    margin-right: 6px;
+    color: #414141;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.skills .scroll .arrow {
+    height: 22px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.skills .scroll svg {
+    min-width: 22px;
+    min-height: 22px;
+    fill: #414141;
+    transition: 0.2s ease;
+}
+
+.skills .scroll svg:nth-child(1) {
+    margin-top: -100%;
+    animation: roll 1s ease forwards infinite;
+}
+
+.skills .scroll:hover svg:nth-child(1) {
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.skills .scroll:hover .text {
+    color: #FFFFFF;
+}
+.skills .scroll:hover svg {
+    fill: #FFFFFF;
+}

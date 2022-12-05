@@ -1,0 +1,42 @@
+:root {
+    --yellow: #FFF000;
+    --white: #FFFFFF;
+    --nav-blue: #1E377A;
+    --visit-blue: #0060F0;
+    --visit-glow-blue: rgba(0, 96, 240, 0.65);
+    --bracket-blue: #1E377A; 
+    --project-blue: #0060F0;
+    --quote-yellow: #FFF000;
+    --quote-blue: #0066FF;
+    --contact-grey: #242424;
+    --project-card-grey: #222222;
+    --project-card-slide-grey: #1f1f1f;
+
+    --background-blue: #0E1F49;
+    --background-black: #161616;
+    --background-light-blue: #091B45;
+    --background-light-black: #1A1A1A;
+
+    --neon-blue: #2C88F7;
+    --neon-purple: #B414FF;
+    --neon-green: #00FFB2;    
+
+
+
+    --misc-project-grey: #181818;
+    --misc-project-open: #A3A3A3;
+
+
+    --skills-grey: #414141;
+    --skills-grey: #222222;
+
+
+    --story-divider-blue: #091B45;
+
+
+    --now-background-blue: #091B45;
+
+
+    --contact-button-blue: #0066FF;
+    --contact-button-dark-blue: #0E1F49;
+}

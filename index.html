@@ -4,9 +4,642 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan Hassmann</title>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/App.css">
+    <link rel="stylesheet" href="./CSS/Colors.css">
+    <link rel="stylesheet" href="./CSS/Hero.css">
+    <link rel="stylesheet" href="./CSS/Projects.css">
+    <link rel="stylesheet" href="./CSS/Misc Projects.css">
+    <link rel="stylesheet" href="./CSS/Skills.css">
+    <link rel="stylesheet" href="./CSS/About.css">
+    <link rel="stylesheet" href="./CSS/Story.css">
+    <link rel="stylesheet" href="./CSS/Now.css">
+    <link rel="stylesheet" href="./CSS/Contact.css">
+
+    <link rel="stylesheet" href="./CSS/Canvases.css">
+    
+
+    <title>Portfolio Components</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+    <canvas id="hero-canvas-secondary"></canvas>
+    <canvas id="hero-canvas-lower-secondary"></canvas>
+    <canvas id="hero-canvas-lime"></canvas>
+    <canvas id="hero-canvas-purple"></canvas>
+    <canvas id="hero-canvas-blue"></canvas>
+    <canvas id="hero-canvas-lower"></canvas>
+
+
+    <div class="app">   
+        <canvas id="contact-canvas-lime"></canvas>
+        <canvas id="contact-canvas-purple"></canvas>
+        <canvas id="contact-canvas-blue"></canvas>
+        
+
+        <div id="home" class="hero">
+
+            <nav>
+                <ul class="nav">
+                    <li class="link">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="link">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="link resume" id="nav-resume">
+                        <a target="_blank" href="https://drive.google.com/file/d/1-UGDUEBYJyYYPTCft1WvoT6uV9tKEfFb/view?usp=sharing">
+                            <span>Resume</span>
+                            <img src="./Assets/Download.svg" alt="Download">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="name">Jordan</h1>
+            <h1 class="name">Hassmann</h1>
+
+            <div class="interests">
+                <p class="text">
+                    I'm a 
+                    <span class="fancy">Web Developer</span>  
+                    <span class="and">&&</span> 
+                    <span class="fancy">Software Engineer</span>
+                </p>                
+            </div>
+
+            <button id="hero-scroll" class="scroll">
+                <span class="text">Scroll</span>
+                <div class="arrow">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.001 13.022h-3.251c-.412 0-.75.335-.75.752 0 .188.071.375.206.518 1.685 1.775 4.692 4.945 6.069 6.396.189.2.452.312.725.312.274 0 .536-.112.725-.312 1.377-1.451 4.385-4.621 6.068-6.396.136-.143.207-.33.207-.518 0-.417-.337-.752-.75-.752h-3.251v-9.02c0-.531-.47-1.002-1-1.002h-3.998c-.53 0-1 .471-1 1.002z" fill-rule="nonzero"/></svg>
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.001 13.022h-3.251c-.412 0-.75.335-.75.752 0 .188.071.375.206.518 1.685 1.775 4.692 4.945 6.069 6.396.189.2.452.312.725.312.274 0 .536-.112.725-.312 1.377-1.451 4.385-4.621 6.068-6.396.136-.143.207-.33.207-.518 0-.417-.337-.752-.75-.752h-3.251v-9.02c0-.531-.47-1.002-1-1.002h-3.998c-.53 0-1 .471-1 1.002z" fill-rule="nonzero"/></svg>
+                </div>
+            </button>
+
+        </div>
+
+        <div class="transition fade-in">
+            <h2 id="projects">Projects</h2>
+        </div>
+
+        <div id="projects-section" class="projects">
+
+            <div class="project">
+                <div class="content">
+
+                    <h4 class="id">Project 2</h4>
+                    <h3 class="title">Morssey</h3>
+                    <p class="description">
+                        I led a team of three fellow developers in the creation 
+                        of Morrsey at a Texas A&M University hackathon hosted 
+                        by TAMUhack. <br><br>
+
+                        This platform was designed to leverage existing browser 
+                        APIs in conjunction with Google Cloud APIs to perform a
+                        series of bi-directional morse code translations.   
+                    </p>
+
+                    <div class="chips">
+                        <span class="chip">JS</span>
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">Google APIs</span>
+                        <span class="chip">GitHub</span>
+                    </div>
+
+                </div>
+                <a target="_blank" href="https://morssey-b6bd5.web.app/" class="thumbnail">
+                    <img src="./Assets/Morssey.png" alt="Tamu Datathon">
+                    <div class="video-container">
+                        <video loop autoplay muted>
+                            <source src="./Assets/MorsseyVideo.webm" type="video/webm">
+                        </video>
+                    </div>
+                </a>
+                
+            </div>
+
+
+            <div class="project">
+                <div class="content">
+
+                    <h4 class="id">Project 1</h4>
+                    <h3 class="title">Tamu Datathon</h3>
+                    <p class="description">
+                        During my Fall 2022 semester at Texas A&M University, 
+                        I had the priviledge to be on a remarkable team and take 
+                        part in the organization of the 2022 TAMU Datathon that 
+                        hosted 300+ participants. <br><br>
+
+                        I primarily worked with the design team to create promotional 
+                        material and provide designs for the TAMU Datathon Website. 
+                    </p>
+
+                    <div class="chips">
+                        <span class="chip">Figma</span>
+                        <span class="chip">Canva</span>
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS3</span>
+                    </div>
+
+                </div>
+                <a target="_blank" href="https://www.tamudatathon.com" class="thumbnail">
+                    <img src="./Assets/Tamu Datathon.png" alt="Tamu Datathon">
+                    <div class="video-container">
+                        <video loop autoplay muted>
+                            <source src="./Assets/DatathonVideo.webm" type="video/webm">
+                        </video>
+                    </div>
+                </a>
+            </div>
+
+            
+            <div class="project">
+                <div class="content">
+
+                    <h4 class="id">Project 3</h4>
+                    <h3 class="title">Dots & Boxes</h3>
+                    <p class="description">
+                        From a desire to create a fun game I could play 
+                        with my friends came Dots & Boxes (Based on the actual game).
+                        By using Firebase's NoSQL Firestore database and Authentication, 
+                        the user can create an account, select friends to play with, 
+                        and create a board.
+                    </p>
+
+                    <div class="chips">
+                        <span class="chip">JS</span>
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">Firebase</span>
+                        <span class="chip">Google Auth</span>
+                    </div>
+
+                </div>
+                <a target="_blank" href="https://swinger-8672e.web.app/" class="thumbnail">
+                    <img src="./Assets/Dots and Boxes.png" alt="Dots and Boxes">
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="misc-projects">
+
+            <div class="container">
+
+                <div class="project">
+                    <div class="header">
+                        <div class="folder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.083 4c1.38 1.612 2.578 3 4.917 3h11v13h-20v-16h4.083zm.917-2h-7v20h24v-17h-13c-1.629 0-2.305-1.058-4-3z"/></svg>
+                        </div>
+                        <!-- <a class="open">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg>
+                        </a> -->
+                    </div>
+    
+                    <div class="content">
+                        <h4 class="title">Liquid Networx</h4>
+                        <p class="description">
+                            A web app designed to streamline the data transfer from
+                            a security dashboard to an internal ticketing tool to 
+                            exponentially increase performance.
+                        </p>
+                    </div>
+    
+                    <div class="chips">
+                        <div class="chip">React</div>
+                        <div class="chip">JS</div>
+                        <div class="chip">antd</div>
+                    </div>
+                </div>
+    
+    
+                <div class="project">
+                    <div class="header">
+                        <div class="folder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.083 4c1.38 1.612 2.578 3 4.917 3h11v13h-20v-16h4.083zm.917-2h-7v20h24v-17h-13c-1.629 0-2.305-1.058-4-3z"/></svg>
+                        </div>
+                        <a target="_blank" href="https://spotifind-2bd2a.web.app/" class="open">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg>
+                        </a>
+                    </div>
+    
+                    <div class="content">
+                        <h4 class="title">Spotifind</h4>
+                        <p class="description">
+                            A Spotify-based web app designed to match you with 
+                            other users with similar Spotify music and/or 
+                            near you with live group chat capabilities and 
+                            the ability to link your Spotify.
+                        </p>
+                    </div>
+    
+                    <div class="chips">
+                        <div class="chip">React</div>
+                        <div class="chip">Firebase</div>
+                        <div class="chip">Material-UI</div>
+                    </div>
+                </div>
+    
+    
+                <div class="project">
+                    <div class="header">
+                        <div class="folder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.083 4c1.38 1.612 2.578 3 4.917 3h11v13h-20v-16h4.083zm.917-2h-7v20h24v-17h-13c-1.629 0-2.305-1.058-4-3z"/></svg>
+                        </div>
+                        <!-- <a class="open">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg>
+                        </a> -->
+                    </div>
+    
+                    <div class="content">
+                        <h4 class="title">Roaming</h4>
+                        <p class="description">
+                            A work in progress aimed to assist in 
+                            navigating a new area by algorithmically 
+                            planning and visually highlighting a 
+                            drive path to explore all of a given area.
+                        </p>
+                    </div>
+    
+                    <div class="chips">
+                        <div class="chip">React</div>
+                        <div class="chip">Firebase</div>
+                        <div class="chip">Sass</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="skills" class="skills">
+
+
+            <div class="background">
+                <p class="item">Postman</p>
+                <p class="item">CSS3</p>
+                <p class="item">Github</p>
+                <p class="item">Figma</p>
+                <p class="item">ES6</p>
+                <p class="item">Node.js</p>
+                <p class="item">Sass</p>
+                <p class="item">DynamoDB</p>
+                <p class="item">Python</p>
+
+                <p class="item">NoSQL</p>
+                <p class="item">antd</p>
+                <p class="item">SQL</p>
+                <p class="item">Vue.js</p>
+                <p class="item">Firebase</p>
+                <p class="item">Material UI</p>
+                <p class="item">AWS</p>
+            </div>
+
+            <div class="foreground">
+                <h2 class="title">My Skills</h2>
+                <div class="items">
+                    <div class="item">
+                        <img src="./Assets/React.svg" alt="React">
+                    </div>
+                    <div class="item">
+                        <img src="./Assets/JS.svg" alt="JavaScript">
+                    </div>
+                    <div class="item">
+                        <img src="./Assets/HTML.svg" alt="HTML5">
+                    </div>
+                    <div class="item">
+                        <img src="./Assets/Sass.svg" alt="Sass">
+                    </div>
+                </div>
+            </div>
+
+            <button id="skills-scroll" class="scroll">
+                <span class="text">Scroll</span>
+                <div class="arrow">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.001 13.022h-3.251c-.412 0-.75.335-.75.752 0 .188.071.375.206.518 1.685 1.775 4.692 4.945 6.069 6.396.189.2.452.312.725.312.274 0 .536-.112.725-.312 1.377-1.451 4.385-4.621 6.068-6.396.136-.143.207-.33.207-.518 0-.417-.337-.752-.75-.752h-3.251v-9.02c0-.531-.47-1.002-1-1.002h-3.998c-.53 0-1 .471-1 1.002z" fill-rule="nonzero"/></svg>
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.001 13.022h-3.251c-.412 0-.75.335-.75.752 0 .188.071.375.206.518 1.685 1.775 4.692 4.945 6.069 6.396.189.2.452.312.725.312.274 0 .536-.112.725-.312 1.377-1.451 4.385-4.621 6.068-6.396.136-.143.207-.33.207-.518 0-.417-.337-.752-.75-.752h-3.251v-9.02c0-.531-.47-1.002-1-1.002h-3.998c-.53 0-1 .471-1 1.002z" fill-rule="nonzero"/></svg>
+                </div>
+            </button>
+
+
+        </div>
+
+        
+        <h2 id="about">
+            <div class="about-backdrop"></div>
+            <span>About Me</span>
+        </h2>
+
+        <div id="about-section" class="about">
+            <canvas id="about-canvas-secondary"></canvas>
+            <canvas id="about-canvas-blue"></canvas>
+            <canvas id="about-canvas-lime"></canvas>
+            <canvas id="about-canvas-purple"></canvas>
+
+            <div class="cover"></div>
+
+            <div class="section">
+
+                <div class="icon">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm2.818 5.865 2.635 1.622-2.641 1.645c-.207.146-.318.378-.318.613 0 .601.682.966 1.182.613l3.511-2.257c.199-.141.318-.369.318-.614 0-.244-.119-.472-.318-.613l-3.505-2.235c-.498-.35-1.182.009-1.182.612 0 .236.111.468.318.614zm9.678 3.873c0-.414-.336-.75-.75-.75h-3.5c-.413 0-.75.336-.75.75s.337.75.75.75h3.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+                </div>
+                <div class="content">
+                    <h3 class="title">
+                        Computer Science 
+                        <span class="symbol">@</span><br>
+                        Texas A&amp;M University
+                    </h3>
+                    <p class="text">
+                        As part of the Texas A&M Class of 
+                        2023, I am pursing a B.S. in Computer 
+                        Science with a minor in Cybersecurity, 
+                        and I will be graduating with Honors Spring 2023!
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <div class="section">
+
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.239 7.237c-.004-.009-.288-.017-.24-.078l.137-.085c.013-.077.072-.162-.007-.304l.047-.125-.1.029s.141-.606.33-.332l-.08.093c.122.122.155.426.195.623.115.06.294.071.088.175.106-.018-.561.286-.648.161-.065-.076.288-.127.278-.157zm-.715-.159c-.077.078.003.128.082.094.114-.05.269-.048.284-.202l.073-.091-.101-.135c-.06-.012-.1.064-.137.095l-.066.017-.062.08.007.044-.08.098zm7 9.167l-.733-1.206-.724-1.186c-.73-1.194-1.388-2.276-1.961-3.296l-.07.067c-.376.156-.942-.509-1.339-.531.192.03.018-.49.018-.524-.153-.189-1.123.021-1.378.055-.479.063-.979.057-1.346.355-.258.21-.262.551-.524.716-.17.106-.356.072-.502.209-.258.245-.553.607-.697.929-.062.135.077.458.043.632-.336 1.063.085 2.538 1.375 2.701.312.039.638.209.955.114.252-.076.474-.248.745-.268.377-.025.22.529.737.379.251-.074.365.172.365.359-.084.391-.268.609.088.883.242.188.442.456.486.78.026.182.196.494-.015.602-.149.075-.259.507-.257.649.031.165.365.481.466.621.146.2.039.436.158.663.122.232.237.41.323.645.111.324.958-.007 1.156-.006.673.004 1.014-.944 1.487-1.235.267-.165.192-.616.51-.848.296-.215.608-.344.636-.741.021-.344-.259-1.062-.104-1.353l.102-.165zm-7.301-7.76c.041.172-.119.645-.154.795-.031.138.442.226.415.295.004-.008.642-.22.705-.275l.144-.323c.121-.081.248-.146.384-.196l.164-.285c.056-.021.71-.123.756-.101.165.075.469.389.583.531l.041.032c-.326-.67-.59-1.314-.796-1.942l-.083.036c-.222 0-.528.251-.663.405-.095.104-.669.337-.732.33.33.035.314.276.288.482-.068.476-1.096.035-1.052.216zm10.904 5.049c-.277 4.807-4.253 8.623-9.13 8.623-2.603 0-4.951-1.086-6.618-2.83-.198-.208-.346-.7-.02-.9l.331-.085c.259-.22-.242-1.111-.044-1.254.617-.441.324-.982-.055-1.429-.161-.19-1.043-1.1-1.143-.937.074-.249-.16-.85-.302-1.087-.239-.398-.553-.643-.679-1.081-.05-.174-.05-.704-.153-.826-.041-.05-.358-.185-.347-.257.305-1.82 1.147-3.458 2.364-4.751l.821-.33c.515-.773.545-.173 1.008-.375.154 0 .331-.634.496-.734.289-.185.068-.185.015-.27-.112-.184 2.411-1.103 2.453-.938.034.14-1.249.809-1.108.788-.326.043-.388.627-.328.625.163-.005 1.182-.774 1.657-.61.466.161 1.301-.37 1.627-.64l.04-.038c.029-.761.195-1.494.481-2.172l-.493-.026c-6.075 0-11 4.925-11 11s4.925 11 11 11c6.074 0 11-4.925 11-11 0-.764-.078-1.509-.227-2.229-.491.864-1.044 1.779-1.646 2.763zm1.873-9.1c0 2.45-1.951 5.373-4.5 9.566-2.549-4.193-4.5-7.116-4.5-9.566 0-2.449 2.139-4.434 4.5-4.434s4.5 1.985 4.5 4.434zm-2.75.066c0-.966-.784-1.75-1.75-1.75s-1.75.784-1.75 1.75.784 1.75 1.75 1.75 1.75-.784 1.75-1.75z"/></svg>
+                </div>
+                <div class="content">
+                    <h3 class="title">
+                        United States <br>
+                        New Braunfels, TX
+                    </h3>
+                    <p class="text">
+                        Being born and rasied in Texas, I grew 
+                        up in a quaint, beautiful town named 
+                        New Braunfels. I recommend it to anyone 
+                        for an ideal getaway!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="story" class="story">
+            <canvas id="story-canvas-secondary"></canvas>
+
+            <div class="container">
+                <h2 class="title">
+                    A Story <br>
+                    About <span class="symbol">College</span>
+                </h2>
+
+                <div class="content">
+
+                    <div class="left">
+                        <p class="paragraph">
+                            I entered college with zero prior programming 
+                            experience. In other words, my first semester was 
+                            rough. It was a common occurrence to catch me asking 
+                            a friend questions like... 
+                        </p>
+
+                        <div class="quotes">
+                            <h4 class="quote">"A directory <span class="emphasize">is</span> a folder..?"</h4>
+                            <h4 class="quote">"What is a package..?"</h4>
+                        </div>
+    
+                        <p class="paragraph">
+                            I tried to alleviate this knowledge disparity 
+                            by learning from some Web Development books, 
+                            which only moderately helped. I was dumbfounded 
+                            by a simple issue where I could not create data 
+                            on a web page that persisted after a refresh.
+                        </p>
+                    </div>
+
+                    <div class="divider"></div>
+                    
+                    <div class="right">
+                        <p class="paragraph">
+                            This issue plagued me until I found myself 
+                            as a volunteer at a hackathon. A participant 
+                            asked me for help fixing his database, to 
+                            which I had no knowledge yet of how to help. 
+                            Funny enough, I began asking him questions 
+                            and taking my first steps in learning the 
+                            solution to my persistent data issue.
+                        </p>
+                        <p class="paragraph">
+                            Upon returning home, I immediately began 
+                            researching databases and their innerworkings. 
+                            I had found my solution, and opened a plethora 
+                            of doors to countless more questions. After 
+                            stepping through these doors, I found my 
+                            passion for Web Development and Software 
+                            Engineering.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <!-- <div class="heading">
+                <h3 class="title">
+                    A Story <br>
+                    About College
+                </h3>
+                <div class="picture">
+                    <img src="./Assets/Portfolio Picture.png" alt="Jordan Hassmann Picture">
+                </div>
+            </div> -->
+
+
+                <!-- <div class="row">
+                    <p class="text">
+                        I entered college with zero prior programming 
+                        experience. <br><br>
+        
+                        In other words, my first semester was rough. 
+                        It was a common occurrence to catch me asking 
+                        a friend questions like... 
+                    </p>
+                </div>
+                
+    
+                <div class="row">
+                    <div class="quotes">
+                        <h4 class="quote">"A directory <span class="emphasize">is</span> a folder..?"</h4>
+                        <h4 class="quote">"What is a package..?"</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p class="text">
+                        I tried to alleviate this knowledge disparity 
+                        by learning from some Web Development books, 
+                        which only moderately helped. I was dumbfounded 
+                        by a simple issue where I could not create data 
+                        on a web page that persisted after a refresh.
+                    </p>
+                </div>
+    
+                
+                <div class="row">
+                    <p class="text">
+                        This issue plagued me until I found myself 
+                        as a volunteer at a hackathon. A participant 
+                        asked me for help fixing his database, to 
+                        which I had no knowledge yet of how to help. 
+                        Funny enough, I began asking him questions 
+                        and taking my first steps in learning the 
+                        solution to my persistent data issue.
+                    </p>
+                    <div class="icon laptop">
+                        <img src="./Assets/Laptop.svg" alt="Laptop">
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <p class="text">
+                        Upon returning home, I immediately began 
+                        researching databases and their innerworkings. 
+                        I had found my solution, and opened a plethora 
+                        of doors to countless more questions. After 
+                        stepping through these doors, I found my 
+                        passion for Web Development and Software 
+                        Engineering.
+                    </p>
+                    <div class="icon door">
+                        <img src="./Assets/Door.svg" alt="Door">
+                    </div>
+                </div>
+    
+                <p class="summary">
+                    Presently, after some fantastic years learning and 
+                    growing, I realized my love for applying logic and 
+                    design to create funtional, seamlessly effective, 
+                    and visually appealing works through programming.
+    
+                    <br>
+                    <br>
+                    <br>
+    
+                    I look forward to growing and continuing this journey! 
+                </p> -->
+            
+        </div>
+
+        <div class="now">
+            <div class="container">
+                <img class="me" src="./Assets/Me.png" alt="Jordan Hassmann (Me)">
+
+                <div class="content">
+                    <h3 class="title">
+                        And Now?
+                    </h3>
+                    <p class="text">
+                        Presently, after some fantastic years learning 
+                        and growing, I realized my love for applying 
+                        logic and design to create funtional, seamlessly 
+                        effective, and visually appealing works 
+                        through programming.
+
+                        <br><br><br>
+
+                        I look forward to growing and continuing 
+                        this journey! 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            
+
+            <div class="container">
+
+                <div class="content">
+                    <div class="contact-me">
+                        <h4 class="title">Contact Me</h4>
+                        <div class="items">
+                            <div class="item">jordanhassmann2023@gmail.com</div>
+                            <div class="item">(830) 358 - 8622</div>
+                            <div class="item">linkedin.com/in/jordan-hassmann</div>
+                        </div>
+                        <div class="resume hidden">
+                            <h4 class="title">Resume</h4>
+                            <div class="download">
+                                <a target="_blank" href="https://drive.google.com/file/d/1-UGDUEBYJyYYPTCft1WvoT6uV9tKEfFb/view?usp=sharing">
+                                    <span>Download</span>
+                                    <img src="./Assets/Download.svg" alt="Download">
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="resume">
+                        <h4 class="title">Resume</h4>
+                        <div class="download">
+                            <a target="_blank" href="https://drive.google.com/file/d/1-UGDUEBYJyYYPTCft1WvoT6uV9tKEfFb/view?usp=sharing">
+                                <span>Download</span>
+                                <img src="./Assets/Download.svg" alt="Download">
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="links">
+                        <h4 class="title">Links</h4>
+                        <div class="items">
+                            <a href="#home" class="item">Home</a>
+                            <a href="#projects" class="item">Projects</a>
+                            <a href="#skills" class="item">Skills</a>
+                            <a href="#about" class="item">About</a>
+                            <a href="#story" class="item">Story</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p class="copyright">© Jordan Hassmann 2022</p>
+
+                    <div class="icons">
+                        <a target="_blank" href='https://www.linkedin.com/in/jordan-hassmann' class="icon">
+                            <img src="./Assets/LinkedIn.svg" alt="LinkedIn">
+                        </a>
+                        <a target="_blank" href='https://www.instagram.com/jordan.hassmann/' class="icon">
+                            <img src="./Assets/Instagram.svg" alt="Instagram">
+                        </a>
+                        <a target="_blank" href='https://github.com/jordan-hassmann' class="icon">
+                            <img src="./Assets/Github.svg" alt="Github">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <script src="./JavaScript/SecondaryLines.js" type="module"></script>
+    <script src="./JavaScript/PrimaryLines.js" type="module"></script>
+    <script src="./JavaScript/Scrolling.js" type="module"></script>
 </body>
 </html>
