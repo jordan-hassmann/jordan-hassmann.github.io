@@ -93,6 +93,7 @@
     
     .about .section:nth-child(odd) {
         align-self: unset;
+        margin-top: 100px;
     }
 
     .about .cover {
