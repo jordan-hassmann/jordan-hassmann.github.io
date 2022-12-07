@@ -4,6 +4,7 @@ const hamburger = document.querySelector('.mobile-nav')
 const close = document.querySelector('.side-nav .close')
 const sideNav = document.querySelector('.side-nav')
 const links = document.querySelectorAll('.side-nav .link')
+const body = document.querySelector('body')
 const pages = [
     '#home', 
     '#projects', 
@@ -14,10 +15,12 @@ const pages = [
 
 hamburger.addEventListener('click', e => {
     sideNav.style.right = '0vw'
+    body.style.overflow = 'hidden'
 })
 
 close.addEventListener('click', e => {
     sideNav.style.right = '-100vw'
+    body.style.overflow = 'scroll'
 })
 
 links.forEach(link => {
