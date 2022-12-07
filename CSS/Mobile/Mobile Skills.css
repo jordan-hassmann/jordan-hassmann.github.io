@@ -1,0 +1,43 @@
+
+
+@media screen and (max-width: 500px) {
+
+    @layer skills-mobile {
+
+        .skills {
+            /* height: unset;
+            padding: 0 20px 300px 20px; */
+        }
+
+        .skills .background .item {
+            color: var(--skills-grey);
+            font-size: min(25px, 3vw);
+            font-weight: bold;
+            line-height: 30px;
+            text-align: right;
+
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        .skills .background .item:nth-child(10) {
+            margin-top: 60px;
+        }
+
+
+
+
+
+        .skills .foreground .title {
+            font-size: 14vw;
+            margin-bottom: 30px;
+        }
+
+        .skills .foreground .items {
+            width: 84%;
+        }
+
+        
+    }
+
+}

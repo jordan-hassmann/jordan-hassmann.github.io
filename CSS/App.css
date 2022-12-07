@@ -1,113 +1,121 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'IBM Plex Mono', monospace;
-}
+@layer 
+app, 
+hero-desktop, about-desktop, story-desktop, now-desktop, contact-desktop, misc-projects-desktop, skills-desktop, projects-desktop, 
+hero-mobile, about-mobile, story-mobile, now-mobile, contact-mobile, misc-projects-mobile, skills-mobile, projects-mobile;
 
-p {
-    font-weight: 300;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--background-blue);
-}
-
-.app {
-    width: 100%; 
-    position: relative;
-    z-index: 2;
-}
-
-.symbol {
-    color: var(--yellow);
-}
-
-.transition.fade-in {
-    height: 350px;
-    background: rgb(22,22,22);
-    background: linear-gradient(180deg, rgba(22,22,22,0) 0%, rgba(22,22,22,1) 100%);
-
-    position: relative;
-}
-
-
-.transition-triangle-out {
-    background: rgb(22,22,22);
-    background: linear-gradient(355deg, rgba(14, 31, 73, 1) 50%, rgba(14, 31, 73, 0) 50%);
-
-    height: 200px;
-    width: 100%;
-    position: relative;
-    z-index: 10;
-    
-    margin-top: -200px;
-}
-
-.emphasize {
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Caveat', cursive;
-
-}
-
-
-
-
-
-
-
-#about {
-    padding-left: 10%;
-    margin: 0px 0 80px 0;
-    position: relative;
-    font-family: 'IBM Plex Sans', sans-serif;
-
-    padding-top: 60px;
-}
-#about span {
-    font-size: 45px;
-    text-transform: uppercase;
-    color: var(--yellow);
-    position: relative;
-    z-index: 10;
-}
-
-#about .about-backdrop {
-    background-color: var(--background-blue);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 4;
-}
-
-#projects {
-    font-size: 45px;
-    text-transform: uppercase;
-    color: var(--yellow);
-    position: absolute;
-    bottom: 0%;
-    left: 10%;
-
-    padding-top: 80px;
-}
-
-
-
-
-
-
-
-@keyframes roll {
-    from {
-        margin-top: -100%;
+@layer app {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'IBM Plex Mono', monospace;
     }
-    to {
-        margin-top: 0%;
+    
+    p {
+        font-weight: 300;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: var(--background-blue);
+    }
+    
+    .app {
+        width: 100%; 
+        position: relative;
+        z-index: 2;
+    }
+    
+    .symbol {
+        color: var(--yellow);
+    }
+    
+    .transition.fade-in {
+        height: 350px;
+        background: rgb(22,22,22);
+        background: linear-gradient(180deg, rgba(22,22,22,0) 0%, rgba(22,22,22,1) 100%);
+        backdrop-filter: blur(20px);
+        background-color: rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    
+    
+    .transition-triangle-out {
+        background: rgb(22,22,22);
+        background: linear-gradient(355deg, rgba(14, 31, 73, 1) 50%, rgba(14, 31, 73, 0) 50%);
+    
+        height: 200px;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        
+        margin-top: -200px;
+    }
+    
+    .emphasize {
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Caveat', cursive;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    #about {
+        padding-left: 10%;
+        margin: 0px 0 80px 0;
+        position: relative;
+        font-family: 'IBM Plex Sans', sans-serif;
+    
+        padding-top: 60px;
+    }
+    #about span {
+        font-size: 45px;
+        text-transform: uppercase;
+        color: var(--yellow);
+        position: relative;
+        z-index: 10;
+    }
+    
+    #about .about-backdrop {
+        background-color: var(--background-blue);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+    
+    #projects {
+        font-size: 45px;
+        text-transform: uppercase;
+        color: var(--yellow);
+        position: absolute;
+        bottom: 0%;
+        left: 10%;
+    
+        padding-top: 80px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    @keyframes roll {
+        from {
+            margin-top: -100%;
+        }
+        to {
+            margin-top: 0%;
+        }
     }
 }

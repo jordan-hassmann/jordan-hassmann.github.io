@@ -23,7 +23,16 @@
     <link rel="stylesheet" href="./CSS/Contact.css">
 
     <link rel="stylesheet" href="./CSS/Canvases.css">
-    <link rel="stylesheet" href="./CSS/Mobile.css">
+
+    <link rel="stylesheet" href="./CSS/Mobile/Mobile Hero.css">
+    <link rel="stylesheet" href="./CSS/Mobile/Mobile About.css">
+    <link rel="stylesheet" href="./CSS/Mobile/Mobile Story.css">
+    <link rel="stylesheet" href="./CSS/Mobile/Mobile Now.css">
+    <link rel="stylesheet" href="./CSS/Mobile/Mobile Contact.css">
+    <link rel="stylesheet" href="./CSS/Mobile/Mobile Misc Projects.css">
+    <link rel="stylesheet" href="CSS/Mobile/Mobile Skills.css">
+    <link rel="stylesheet" href="CSS/Mobile/Mobile Projects.css">
+    <link rel="stylesheet" href="CSS/Mobile/Mobile Size Nav.css">
     
 
     <title>Jordan Hassmann</title>
@@ -39,10 +48,51 @@
 
 
     <div class="app">   
+        <div class="contact-backdrop"></div>
         <canvas id="contact-canvas-lime"></canvas>
         <canvas id="contact-canvas-purple"></canvas>
         <canvas id="contact-canvas-blue"></canvas>
         
+        <div class="side-nav">
+            <div class="container">
+                <ul class="links">
+                    <li class="link" data-index="0">
+                        <button>Home</button>
+                    </li>
+                    <li class="link" data-index="1">
+                        <button>Projects</button>
+                    </li>
+                    <li class="link" data-index="2">
+                        <button>Skills</button>
+                    </li>
+                    <li class="link" data-index="3">
+                        <button>About Me</button>
+                    </li>
+                    <li class="link" data-index="4">
+                        <button>Contact</button>
+                    </li>
+                </ul>
+                <div class="footer">
+                    <div class="close">
+                        <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+                    </div>
+
+                    <p class="copyright">© Jordan Hassmann 2022</p>
+
+                    <div class="icons">
+                        <a target="_blank" href='https://www.linkedin.com/in/jordan-hassmann' class="icon">
+                            <img src="./Assets/LinkedIn.svg" alt="LinkedIn">
+                        </a>
+                        <a target="_blank" href='https://www.instagram.com/jordan.hassmann/' class="icon">
+                            <img src="./Assets/Instagram.svg" alt="Instagram">
+                        </a>
+                        <a target="_blank" href='https://github.com/jordan-hassmann' class="icon">
+                            <img src="./Assets/Github.svg" alt="Github">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="home" class="hero">
 
@@ -90,6 +140,41 @@
 
         </div>
 
+        <div class="hero-mobile">
+            <div class="mobile-header" id="mobile-header">
+                <p class="initials">jh</p>
+                <button class="mobile-nav">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/></svg>
+                </button>
+            </div>
+            
+            <div class="container">
+                <p class="mobile-greeting">Hi, my name is</p>
+                <div>
+                    <h1 class="name">Jordan</h1>
+                    <h1 class="name">Hassmann</h1>
+                </div>
+    
+                <div class="interests">
+                    <p class="text">
+                        I'm a 
+                        <span class="fancy">Web Developer</span>  
+                        <span class="and">&&</span> 
+                        <span class="fancy">Software Engineer</span>
+                    </p>                
+                </div>
+
+                
+            </div>
+            <button id="hero-scroll" class="scroll">
+                <span class="text">Scroll</span>
+                <div class="arrow">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.001 13.022h-3.251c-.412 0-.75.335-.75.752 0 .188.071.375.206.518 1.685 1.775 4.692 4.945 6.069 6.396.189.2.452.312.725.312.274 0 .536-.112.725-.312 1.377-1.451 4.385-4.621 6.068-6.396.136-.143.207-.33.207-.518 0-.417-.337-.752-.75-.752h-3.251v-9.02c0-.531-.47-1.002-1-1.002h-3.998c-.53 0-1 .471-1 1.002z" fill-rule="nonzero"/></svg>
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.001 13.022h-3.251c-.412 0-.75.335-.75.752 0 .188.071.375.206.518 1.685 1.775 4.692 4.945 6.069 6.396.189.2.452.312.725.312.274 0 .536-.112.725-.312 1.377-1.451 4.385-4.621 6.068-6.396.136-.143.207-.33.207-.518 0-.417-.337-.752-.75-.752h-3.251v-9.02c0-.531-.47-1.002-1-1.002h-3.998c-.53 0-1 .471-1 1.002z" fill-rule="nonzero"/></svg>
+                </div>
+            </button>
+        </div>
+
         <div class="transition fade-in">
             <h2 id="projects">Projects</h2>
         </div>
@@ -99,7 +184,7 @@
             <div class="project">
                 <div class="content">
 
-                    <h4 class="id">Project 2</h4>
+                    <h4 class="id">Project 1</h4>
                     <h3 class="title">Morssey</h3>
                     <p class="description">
                         I led a team of three fellow developers in the creation 
@@ -135,7 +220,7 @@
             <div class="project">
                 <div class="content">
 
-                    <h4 class="id">Project 1</h4>
+                    <h4 class="id">Project 2</h4>
                     <h3 class="title">Tamu Datathon</h3>
                     <p class="description">
                         During my Fall 2022 semester at Texas A&M University, 
@@ -458,92 +543,10 @@
             </div>
 
             
-
-            <!-- <div class="heading">
-                <h3 class="title">
-                    A Story <br>
-                    About College
-                </h3>
-                <div class="picture">
-                    <img src="./Assets/Portfolio Picture.png" alt="Jordan Hassmann Picture">
-                </div>
-            </div> -->
-
-
-                <!-- <div class="row">
-                    <p class="text">
-                        I entered college with zero prior programming 
-                        experience. <br><br>
-        
-                        In other words, my first semester was rough. 
-                        It was a common occurrence to catch me asking 
-                        a friend questions like... 
-                    </p>
-                </div>
-                
-    
-                <div class="row">
-                    <div class="quotes">
-                        <h4 class="quote">"A directory <span class="emphasize">is</span> a folder..?"</h4>
-                        <h4 class="quote">"What is a package..?"</h4>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <p class="text">
-                        I tried to alleviate this knowledge disparity 
-                        by learning from some Web Development books, 
-                        which only moderately helped. I was dumbfounded 
-                        by a simple issue where I could not create data 
-                        on a web page that persisted after a refresh.
-                    </p>
-                </div>
-    
-                
-                <div class="row">
-                    <p class="text">
-                        This issue plagued me until I found myself 
-                        as a volunteer at a hackathon. A participant 
-                        asked me for help fixing his database, to 
-                        which I had no knowledge yet of how to help. 
-                        Funny enough, I began asking him questions 
-                        and taking my first steps in learning the 
-                        solution to my persistent data issue.
-                    </p>
-                    <div class="icon laptop">
-                        <img src="./Assets/Laptop.svg" alt="Laptop">
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <p class="text">
-                        Upon returning home, I immediately began 
-                        researching databases and their innerworkings. 
-                        I had found my solution, and opened a plethora 
-                        of doors to countless more questions. After 
-                        stepping through these doors, I found my 
-                        passion for Web Development and Software 
-                        Engineering.
-                    </p>
-                    <div class="icon door">
-                        <img src="./Assets/Door.svg" alt="Door">
-                    </div>
-                </div>
-    
-                <p class="summary">
-                    Presently, after some fantastic years learning and 
-                    growing, I realized my love for applying logic and 
-                    design to create funtional, seamlessly effective, 
-                    and visually appealing works through programming.
-    
-                    <br>
-                    <br>
-                    <br>
-    
-                    I look forward to growing and continuing this journey! 
-                </p> -->
-            
         </div>
+
+
+
 
         <div class="now">
             <div class="container">
@@ -645,5 +648,6 @@
     <script src="./JavaScript/SecondaryLines.js" type="module"></script>
     <script src="./JavaScript/PrimaryLines.js" type="module"></script>
     <script src="./JavaScript/Scrolling.js" type="module"></script>
+    <script src="./JavaScript/SideNavigation.js" type="module"></script>
 </body>
 </html>

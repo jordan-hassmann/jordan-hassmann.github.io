@@ -1,0 +1,37 @@
+
+
+@media screen and (max-width: 500px) {
+
+    @layer story-mobile {
+
+        .story .container {
+            width: 84%;
+            margin-left: 8%;
+        }
+
+        .story #story-canvas-secondary {
+            display: none;
+        }
+
+
+
+
+
+        .story .title {
+            font-size: 10vw;
+            margin: 0;
+            margin-bottom: 30px;
+            padding-top: 30px;
+        }
+
+        .story .paragraph {
+            font-size: 5vw;
+            line-height: 8vw;
+            font-weight: 300;
+        }
+
+
+
+    }
+
+}

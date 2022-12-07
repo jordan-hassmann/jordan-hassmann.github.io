@@ -18,15 +18,17 @@ shift(navButtons, 10);
 
 
 // -=-=-=- Hero Animations -=-=-=- //
-const greeting = document.querySelectorAll('.greeting')
+const greeting = document.querySelectorAll('.hero .greeting')
 shift(greeting, 10)
 
-const myName = document.querySelectorAll('.name')
+const myName = document.querySelectorAll('.hero .name')
 shift(myName, 10)
 
-const interests = document.querySelectorAll('.interests')
+const interests = document.querySelectorAll('.hero .interests')
 shift(interests, 10)
 
+// const mobileGreeting = document.querySelectorAll('.hero-mobile .mobile-greeting')
+// shift(mobileGreeting, 10)
 
 
 

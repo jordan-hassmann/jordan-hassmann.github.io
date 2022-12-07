@@ -1,0 +1,30 @@
+
+
+@media screen and (max-width: 500px) {
+
+    @layer projects-mobile {
+
+        .projects {
+            padding-top: 80px;
+            gap: 100px;
+        }
+
+        #projects {
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 84%;
+        }
+
+        .projects .project {
+            width: 84%;
+        }
+
+        .projects .project .thumbnail {
+            width: 100%;
+        }
+
+    }
+
+}

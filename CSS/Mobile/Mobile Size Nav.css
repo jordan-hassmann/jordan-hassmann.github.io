@@ -1,0 +1,123 @@
+
+
+@media screen and (max-width: 500px) {
+
+    @layer side-nav-mobile {
+
+        .side-nav {
+            background-color: var(--background-black);
+            position: fixed;
+            right: -100vw;
+            top: 0;
+            z-index: 20;
+            width: 100vw;
+            height: 100vh;
+            overflow: scroll;
+
+            display: grid;
+            place-items: center;
+
+            transition: right 0.2s ease;
+        }
+
+        .side-nav .container {
+            width: 80%;
+            height: 90%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: fit-content;
+        }
+
+        .side-nav .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            list-style: none;
+        }
+
+        .side-nav .link {
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .side-nav .link button {
+            background-color: transparent;
+            border: none;
+            color: var(--white);
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        .side-nav .link.clicked {
+            
+            transform: translateX(30px);
+        }
+
+        .side-nav .link.clicked button {
+            color: var(--yellow);
+        }
+
+        .side-nav .footer {
+            border-top: 10px solid #1A1A1A;
+            display: flex;
+            padding-top: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+
+
+
+
+        .side-nav .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 30px;
+        }
+
+        .side-nav .close svg {
+            fill: var(--white);
+        }
+
+
+
+
+
+
+        .side-nav .copyright {
+            font-size: 18px;
+            color: #373737;
+            font-weight: bold;
+        }
+
+
+
+
+        .side-nav .icons {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    
+        .side-nav .icon {
+            width: 40px;
+            margin: 0 10px;
+            cursor: pointer;
+            
+        }
+    
+        .side-nav .icon img {
+            transition: 0.2s ease;
+        }
+    
+        .side-nav .icon:hover img {
+            filter: invert() brightness(50%);
+        }
+    }
+
+}

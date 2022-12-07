@@ -1,0 +1,45 @@
+
+@media screen and (max-width: 500px) {
+
+    @layer about-mobile {
+
+        #about {
+            margin: 0;
+
+            padding: 50px 0 50px 8%;
+        }
+        .about {
+            margin-bottom: 10px;
+        }
+
+        .about .section .icon {
+            display: none;
+        }
+
+        .about .section {
+            width: 84%;
+            margin: 0;
+            margin-bottom: 70px;
+        }
+
+        .about .section .title {
+            font-size: 6vw;
+        }
+
+        .about .cover {
+            display: none;
+        }
+
+
+        #about-canvas-secondary, 
+        #about-canvas-blue, 
+        #about-canvas-lime,
+        #about-canvas-purple {
+            display: none;
+        }
+
+        
+    }
+
+
+}

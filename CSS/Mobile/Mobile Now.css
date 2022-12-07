@@ -1,0 +1,31 @@
+
+
+@media screen and (max-width: 500px) {
+    
+    @layer now-mobile {
+
+
+        .now .container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+
+            padding: 0;
+            padding-top: 40px;
+        }
+
+        .now .content {
+            width: 84%;
+        }
+
+        .now .me {
+            min-width: unset;
+            min-height: unset;
+            min-width: 70%;
+
+            margin: 0;
+            margin: 40px 0 40px 0;
+        }
+    }
+}

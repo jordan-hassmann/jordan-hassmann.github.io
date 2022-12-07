@@ -1,0 +1,18 @@
+
+
+@media screen and (max-width: 500px) {
+    
+    @layer misc-projects-mobile {
+
+        .misc-projects {
+            gap: 10px;
+        }
+
+        .misc-projects .project {
+            padding: 0;
+            width: 90%;
+            padding: 30px;
+        }
+    }
+
+}
