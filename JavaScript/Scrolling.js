@@ -86,7 +86,7 @@ skillsScroll.addEventListener('click', e => {
 // -=-=-=- Projects Animation -=-=-=- //
 const allProjects = document.querySelectorAll('.project')
 shift(allProjects, -150)
-document.addEventListener('scroll', () => shift(allProjects, -150))
+document.addEventListener('scroll', () => shift(allProjects, -100))
 
 
 const colorProjects = projects => {
