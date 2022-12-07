@@ -20,6 +20,9 @@ hamburger.addEventListener('click', e => {
     app.style.overflow = 'hidden'
     body.style.overflow = 'hidden'
     html.style.overflow = 'hidden'
+    document.body.addEventListener('touchstart', e => {
+        e.preventDefault()
+    })
 })
 
 close.addEventListener('click', e => {
@@ -27,6 +30,7 @@ close.addEventListener('click', e => {
     app.style.overflow = 'scroll'
     body.style.overflow = 'scroll'
     html.style.overflow = 'scroll'
+    document.body.addEventListener('touchstart', e => {})
 })
 
 links.forEach(link => {
