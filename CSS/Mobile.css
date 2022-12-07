@@ -1,0 +1,7 @@
+
+
+@media screen and (max-width: 900) {
+    .hero .name {
+        border: 1px solid red;
+    }
+}
