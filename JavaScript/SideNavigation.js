@@ -17,9 +17,10 @@ const pages = [
 
 hamburger.addEventListener('click', e => {
     sideNav.style.right = '0vw'
+    body.style.height = '100vh'
+
     app.style.overflow = 'hidden'
     body.style.overflow = 'hidden'
-    html.style.overflow = 'hidden'
     document.body.addEventListener('touchstart', e => {
         e.preventDefault()
     })
@@ -27,9 +28,10 @@ hamburger.addEventListener('click', e => {
 
 close.addEventListener('click', e => {
     sideNav.style.right = '-100vw'
+    body.style.height = 'unset'
+
     app.style.overflow = 'scroll'
     body.style.overflow = 'scroll'
-    html.style.overflow = 'scroll'
     document.body.addEventListener('touchstart', e => {})
 })
 
