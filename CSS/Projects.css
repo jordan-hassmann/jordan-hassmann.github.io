@@ -103,8 +103,8 @@
 
     .projects .thumbnail {
         width: 48%;
-        display: grid;
-        place-items: center;
+        /* display: grid;
+        place-items: center; */
         position: relative;
     }
 
@@ -198,7 +198,6 @@
         .projects .project {
             flex-direction: column;
             align-items: center;
-            transform: none;
         }
 
         .projects .project:nth-child(even) {
