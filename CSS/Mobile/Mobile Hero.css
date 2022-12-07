@@ -77,27 +77,41 @@
 
 
 
-        .hero-mobile .mobile-header {
+        .mobile-header {
             position: fixed; 
             top: 0;
             left: 0;
             width: calc(100% - 50px);
-            padding: 10px 20px 20px 30px;
+            padding: 20px 20px 20px 30px;
+            z-index: 15;
+            background-color: transparent;
 
-            /* background-color: var(--background-blue); */
 
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: 0.2s ease;
         }
 
-        .hero-mobile .mobile-header .initials {
+        .mobile-header.scroll-up {
+            background-color: var(--background-black);
+            padding: 10px 20px 10px 30px;
+        }
+
+        .mobile-header.scroll-down {
+            background-color: var(--background-black);
+            top: -104px;
+        }
+
+
+        .mobile-header .initials {
             font-family: 'Caveat', cursive;
             font-size: 40px;
             color: var(--white);
+            margin-top: -6px;
         }   
         
-        .hero-mobile .mobile-header .mobile-nav {
+        .mobile-header .mobile-nav {
             width: 57px;
             padding: 6px;
             border-radius: 8px;
@@ -107,11 +121,11 @@
             transition: background-color 0.2s ease;
         }
 
-        .hero-mobile .mobile-header .mobile-nav:hover {
+        .mobile-header .mobile-nav:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
 
-        .hero-mobile .mobile-header .mobile-nav svg {
+        .mobile-header .mobile-nav svg {
             fill: var(--white);
             width: 100%;
         }

@@ -27,10 +27,27 @@ shift(myName, 10)
 const interests = document.querySelectorAll('.hero .interests')
 shift(interests, 10)
 
-// const mobileGreeting = document.querySelectorAll('.hero-mobile .mobile-greeting')
-// shift(mobileGreeting, 10)
 
 
+
+// -=-=-=- Navbar -=-=-=- //
+const navbar = document.querySelector('.mobile-header')
+let prevScrollpos = window.scrollY;
+
+window.addEventListener('scroll', e => {
+    let currentScrollPos = window.scrollY
+    
+    if (window.scrollY <= 30) {
+        navbar.className = 'mobile-header'
+        return 
+    }
+
+    prevScrollpos > currentScrollPos
+    ? navbar.className = 'mobile-header scroll-up'
+    : navbar.className = 'mobile-header scroll-down'
+
+    prevScrollpos = currentScrollPos
+})
 
 
 
@@ -45,6 +62,14 @@ heroScroll.addEventListener('click', e => {
     })
 })
 
+const mobileHeroScroll = document.querySelector('#mobile-hero-scroll')
+mobileHeroScroll.addEventListener('click', e => {
+    document.querySelector('#projects').scrollIntoView({
+        block: 'start', 
+        behavior: 'smooth'
+    })
+})
+
 const skillsScroll = document.querySelector('#skills-scroll')
 skillsScroll.addEventListener('click', e => {
     document.querySelector('#about').scrollIntoView({
@@ -52,6 +77,8 @@ skillsScroll.addEventListener('click', e => {
         behavior: 'smooth'
     })
 })
+
+
 
 
 

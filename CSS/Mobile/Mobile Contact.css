@@ -37,6 +37,7 @@
 
         .contact .links .items {
             display: flex;
+            flex-wrap: wrap;
             gap: 20px;
         }
 
