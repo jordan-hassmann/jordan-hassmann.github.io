@@ -3,7 +3,7 @@
 @layer contact-desktop {
 
     .contact {
-        background-color: var(--background-black);
+        /* background-color: var(--background-black); */
         height: 100vh;
         min-height: 750px;
         position: relative;
@@ -23,8 +23,15 @@
     }
 
     
-
-
+    .contact-backdrop {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        background-color: var(--background-black);
+    }
 
 
 
@@ -225,6 +232,7 @@
 
     }
 
+
     @media screen and (max-width: 550px) {
         .contact .links {
             margin-left: unset;
@@ -236,6 +244,12 @@
 
             width: 70%;
             margin-left: 15%;
+        }
+
+        .contact .links .items {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
         }
     }
 

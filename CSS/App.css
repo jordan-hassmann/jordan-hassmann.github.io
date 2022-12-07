@@ -36,9 +36,7 @@ hero-mobile, about-mobile, story-mobile, now-mobile, contact-mobile, misc-projec
         height: 350px;
         background: rgb(22,22,22);
         background: linear-gradient(180deg, rgba(22,22,22,0) 0%, rgba(22,22,22,1) 100%);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        background-color: rgba(0, 0, 0, 0.1);
+        
         position: relative;
     }
     
