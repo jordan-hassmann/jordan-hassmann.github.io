@@ -20,6 +20,8 @@
 
         .projects .project {
             width: 84%;
+            transform: none;
+
         }
 
         .projects .project .thumbnail {
