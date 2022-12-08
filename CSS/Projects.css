@@ -103,8 +103,12 @@
 
     .projects .thumbnail {
         width: 48%;
+        /* BREAKS THE MOBILE VERSION smh */
         /* display: grid;
         place-items: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
     }
 
